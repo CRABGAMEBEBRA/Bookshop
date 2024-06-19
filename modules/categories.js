@@ -72,11 +72,11 @@ function price(i, res){
   return priceDiv;
 }
 
-const loadBooks = (promise) =>{
+const loadBooks = (promise, category_name) =>{
   promise.then((res) => { 
     for(let i=0; i<6; i++) {
         mainBooks.innerHTML += `
-              <div class="main-books__more">
+              <div class='main-books__more ${category_name} n${i}'>
                   <div><img src="${res[i].volumeInfo.imageLinks.thumbnail}" alt="imgBook" class="main-books-cover"/></div>
                   <div class="main-books-autor">${res[i].volumeInfo.authors[0]}</div>
                   <div class="main-books-title">${res[i].volumeInfo.title}</div>
@@ -91,25 +91,43 @@ const loadBooks = (promise) =>{
 })}
 
 
-loadBooks(getBooks())
+loadBooks(getBooks(), activeCategories)
 
 document.addEventListener('click', (event) => {
-  if(event.target.classList.contains('main-categories-titles')){  
-    mainBooks.innerHTML = ''
+  if(event.target.classList.contains('main-categories-titles')){ 
+    for(let j=0; j < (6 + OtherBooksIndex); j++){
+      if(mainBooks.getElementsByClassName(`${activeCategories}`)[j].classList.contains('none')){continue}
+      mainBooks.getElementsByClassName(`${activeCategories}`)[j].classList.add("none");}
+    OtherBooksIndex = 0
     activeCategories = event.target.innerText;
     document.querySelector('.main-categories-titles.main-categories-titles_active').classList.remove('main-categories-titles_active');
     event.target.classList.add('main-categories-titles_active');
-    loadBooks(getBooks())
+    if(mainBooks.getElementsByClassName(`${activeCategories}`).length != 0){
+      for(let j=0; j < 6; j++){
+        mainBooks.getElementsByClassName(`${activeCategories}`)[j].classList.remove('none');}
+    }
+    else{
+      document.querySelector('.main-loadMore').remove();
+      loadBooks(getBooks(), activeCategories)}
   }
 
   if(event.target.classList.contains('main-loadMore')){  
     OtherBooksIndex += 6
     document.querySelector('.main-loadMore').remove();
-    loadBooks(getBooks())
+    console.log(mainBooks.getElementsByClassName(`${activeCategories}`))
+    console.log(mainBooks.getElementsByClassName(`${activeCategories} none`))
+    if(mainBooks.getElementsByClassName(`${activeCategories} none`).length != 0){
+      for(let j=(OtherBooksIndex); j < (OtherBooksIndex + 6); j++){
+        mainBooks.getElementsByClassName(`${activeCategories}`)[j].classList.remove('none');}
+      mainBooks.innerHTML += `<div class="main-loadMore">LOAD MORE</div>`;  
+    }
+    else{loadBooks(getBooks(), activeCategories)}
+
   }
   if(event.target.classList.contains('main-books-buy')){
-    icons.innerHTML += `
-    <div class = "header-icons-circle">${circleIndex}</div>`;
+    if(circleIndex!=1){document.querySelector('.header-icons-circle').remove();}
+    icons.innerHTML += `<div class = "header-icons-circle"><p class ="header-icons-circle-number">${circleIndex}</p></div>`;
+    circleIndex++;
   }
 })
 

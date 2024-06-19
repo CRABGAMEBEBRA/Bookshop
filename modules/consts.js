@@ -18,16 +18,16 @@ const entities=[
     circle_position3: './images/Ellipse 4.svg',
   }]
 
+const images = ['./images/banner_one.svg', './images/banner_two.svg', './images/banner_three.svg']
+
 const categories = ['Architecture', 'Art & Fashion', 'Biography', 'Business', 'Crafts & Hobbies', 'Drama', 'Fiction', 'Food & Drink', 'Health & Wellbeing', 'History & Politics', 'Humor', 'Poetry', 'Psychology', 'Sience', 'Technology', 'Travel & Maps']
 
 let activeCategories = 'Architecture';
 
 let mainImage = document.querySelector('.main-image')
-const mainCirclesCircle1 = document.querySelector('.main-circles-circle1')
-const mainCirclesCircle2 = document.querySelector('.main-circles-circle2')
-const mainCirclesCircle3 = document.querySelector('.main-circles-circle3')
+const mainCircles = document.querySelector('.main-circles')
 const mainBooks = document.querySelector('.main-books')
-const icons = document.querySelector('header-icons')
+const icons = document.querySelector('.header-icons')
 
 let currentCategoriesIndex=0
 let loadIndex = 0
@@ -37,4 +37,4 @@ let toggleClassId = 0
 
 let circleIndex = 1
 
-export {icons, entities, categories, activeCategories, mainImage, mainCirclesCircle1, mainCirclesCircle2, mainCirclesCircle3, mainBooks, circleIndex, currentCategoriesIndex, loadIndex, OtherBooksIndex}
+export {mainCircles, images, icons, entities, categories, activeCategories, mainImage, mainBooks, circleIndex, currentCategoriesIndex, loadIndex, OtherBooksIndex}

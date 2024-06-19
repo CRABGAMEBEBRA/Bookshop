@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+@media (max-width: 426px) {
+    .header {
+    width: 425px;
+    height: 116px;
+    position: relative;
+}
+.body {
+    margin: 0;
+}
+.header-bookshop {
+    position: absolute;
+    left: 30px;
+    top: 47px;
+    color: var(--text-black, #1c2a39);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+.header-menu {
+    width: 372px;
+    height: 12px;
+    position: absolute;
+    left: 537px;
+    top: 56px;
+    color: var(--text-black, #5c6a79);
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    display: none;
+    justify-content: space-between;
+}
+.header-menu-books {
+    color: var(--text-black, #1c2a39);
+    cursor: pointer;
+}
+.header-menu-audiobooks {
+    cursor: pointer;
+}
+.header-menu-stationery {
+    cursor: pointer;
+}
+.header-menu-blog {
+    cursor: pointer;
+}
+.header-icons {
+    position: absolute;
+    left: 300px;
+    top: 53px;
+    width: 80px;
+    height: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-icons-icon1, .header-icons-icon2, .header-icons-icon3 {
+    cursor: pointer;
+}
+.main-image-image1 {
+    position: relative;
+    left: 30px;
+    margin: auto;
+    width: 300px;
+    display: none;
+}
+.main-promo1 {
+    width: 149px;
+    height: 204px;
+    background-color: #9e98dc;
+    position: absolute;
+    left: 1217px;
+    top: 198px;
+    display: none;
+}
+.main-promo1_text {
+    width: 109px;
+    height: 66px;
+    position: absolute;
+    left: 20px;
+    top: 102px;
+    color: var(--text-black, #1c2a39);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: none;
+}
+.main-image{
+  display: none;
+}
+.main-promo1-arrow {
+    position: absolute;
+    left: 20px;
+    top: 172px;
+    display: none;
+}
+.main-promo2 {
+    width: 137px;
+    height: 273px;
+    background-color: #ff8fe6;
+    position: absolute;
+    left: 1303px;
+    top: 478px;
+    display: none;
+}
+.main-promo2_text {
+    width: 69px;
+    height: 88px;
+    position: absolute;
+    left: 21px;
+    top: 149px;
+    color: var(--text-black, #1c2a39);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: none;
+}
+.main-promo2-arrow {
+    position: absolute;
+    left: 21px;
+    top: 241px;
+    display: none;
+}
+.main-circles {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 56px;
+    height: 12px;
+    position: absolute;
+    top: 330px;
+    left: 140px;
+}
+.main {
+    width: 425px;
+}
+.main-circle_position1, .main-circle_position2, .main-circle_position3 {
+    cursor: pointer;
+}
+.main-categories {
+    width: 200px;
+    height: 710px;
+    background: #efeef6;
+    position: absolute;
+    top: 360px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    color: #5c6a79;
+}
+.main-categories-titles {
+    margin-bottom: 23px;
+    position: relative;
+    top: 45px;
+    left: 20px;
+    cursor: pointer;
+}
+.main-categories-titles_active {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #1c2a39;
+    text-align: left;
+}
+.main-books {
+    width: 200px;
+    position: relative;
+    top: 180px;
+    left: 220px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 91px;
+}
+.main-books__more {
+    width: 200px;
+    height: 300px;
+}
+.main-loadMore {
+    box-sizing: border-box;
+    border: 1px solid #4c3db2;
+    width: 150px;
+    height: 45px;
+    margin: auto;
+    text-align: center;
+    color: #4c3db2;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 550%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main-books-cover {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    display: none;
+}
+.main-books-autor {
+    width: 150px;
+    position: relative;
+    top: 49px;
+    left: 248px;
+    color: #5c6a79;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: capitalize;
+    display: none;
+}
+.main-books-title {
+    position: relative;
+    margin-top: -14px;
+    top: 67px;
+    left: 10px;
+    width: 150px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #1c2a39;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    white-space: pre-wrap;
+}
+.main-books-star {
+    position: relative;
+    margin-top: -24px;
+    width: 12px;
+    height: 12px;
+    left: 50px;
+    top: 92px;
+    display: none;
+    flex-direction: row;
+}
+.main-books-stars-star {
+    margin-right: 1px;
+    display: none;
+}
+.main-books-review {
+    position: relative;
+    margin-top: -10px;
+    height: 12px;
+    left: 10px;
+    top: 91px;
+    color: #5c6a79;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.main-books-description {
+    position: relative;
+    margin-top: -10px;
+    width: 150px;
+    height: 42px;
+    left: 10px;
+    top: 121px;
+    color: #5c6a79;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: capitalize;
+    width: 170px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.main-books-price {
+    position: relative;
+    margin-top: -10px;
+    height: 12px;
+    left: 10px;
+    top: 175px;
+    color: #1c2a39;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-books-buy {
+    position: relative;
+    margin-top: -10px;
+    width: 176px;
+    height: 45px;
+    left: 10px;
+    top: 207px;
+    box-sizing: border-box;
+    border: 1px solid #4c3db2;
+    color: #4c3db2;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-icons-circle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    top:8px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}@media (min-width:427px) {
+    .header {
+    width: 1440px;
+    height: 116px;
+    position: relative;
+}
+.body {
+    margin: 0;
+}
+.header-bookshop {
+    position: absolute;
+    left: 166px;
+    top: 47px;
+    color: var(--text-black, #1c2a39);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+.header-menu {
+    width: 372px;
+    height: 12px;
+    position: absolute;
+    left: 537px;
+    top: 56px;
+    color: var(--text-black, #5c6a79);
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu-books {
+    color: var(--text-black, #1c2a39);
+    cursor: pointer;
+}
+.header-menu-audiobooks {
+    cursor: pointer;
+}
+.header-menu-stationery {
+    cursor: pointer;
+}
+.header-menu-blog {
+    cursor: pointer;
+}
+.header-icons {
+    position: absolute;
+    left: 1161px;
+    top: 53px;
+    width: 120.84px;
+    height: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-icons-icon1, .header-icons-icon2, .header-icons-icon3 {
+    cursor: pointer;
+}
+.main-image{
+    position: relative;
+    margin: auto;
+    width: 1120px;
+    height: 702px;
+}
+.main-promo1 {
+    width: 149px;
+    height: 204px;
+    background-color: #9e98dc;
+    position: absolute;
+    left: 1217px;
+    top: 198px;
+}
+.main-promo1_text {
+    width: 109px;
+    height: 66px;
+    position: absolute;
+    left: 20px;
+    top: 102px;
+    color: var(--text-black, #1c2a39);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.main-promo1-arrow {
+    position: absolute;
+    left: 20px;
+    top: 172px;
+}
+.main-promo2 {
+    width: 137px;
+    height: 273px;
+    background-color: #ff8fe6;
+    position: absolute;
+    left: 1303px;
+    top: 478px;
+}
+.main-promo2_text {
+    width: 69px;
+    height: 88px;
+    position: absolute;
+    left: 21px;
+    top: 149px;
+    color: var(--text-black, #1c2a39);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.main-promo2-arrow {
+    position: absolute;
+    left: 21px;
+    top: 241px;
+}
+.main-circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 56px;
+    height: 12px;
+    position: absolute;
+    top: 722px;
+    left: 692px;
+}
+.main {
+    width: 1440px;
+}
+.main-circle_position1, .main-circle_position2, .main-circle_position3 {
+    cursor: pointer;
+}
+.main-categories {
+    width: 416px;
+    height: 710px;
+    background: #efeef6;
+    position: absolute;
+    top: 839px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    color: #5c6a79;
+}
+.main-categories-titles {
+    margin-bottom: 23px;
+    position: relative;
+    top: 45px;
+    left: 160px;
+    cursor: pointer;
+}
+.main-categories-titles_active {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #1c2a39;
+    text-align: left;
+}
+.main-books {
+    width: 924px;
+    position: relative;
+    top: 180px;
+    left: 356px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 91px;
+}
+.main-books__more {
+    width: 424px;
+    height: 300px;
+}
+.main-loadMore {
+    box-sizing: border-box;
+    border: 1px solid #4c3db2;
+    width: 176px;
+    height: 45px;
+    margin: auto;
+    text-align: center;
+    color: #4c3db2;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 550%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main-books-cover {
+    width: 212px;
+    height: 300px;
+    position: absolute;
+}
+.main-books-autor {
+    width: 150px;
+    position: relative;
+    top: 49px;
+    left: 248px;
+    color: #5c6a79;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: capitalize;
+}
+.main-books-title {
+    position: relative;
+    margin-top: -14px;
+    top: 67px;
+    left: 248px;
+    width: 176px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #1c2a39;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    white-space: pre-wrap;
+}
+.main-books-star {
+    position: relative;
+    margin-top: -24px;
+    width: 12px;
+    height: 12px;
+    left: 248px;
+    top: 92px;
+    display: flex;
+    flex-direction: row;
+}
+.main-books-stars-star {
+    margin-right: 1px;
+}
+.main-books-review {
+    position: relative;
+    margin-top: -10px;
+    height: 12px;
+    left: 318px;
+    top: 91px;
+    color: #5c6a79;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.main-books-description {
+    position: relative;
+    margin-top: -10px;
+    width: 176px;
+    height: 42px;
+    left: 248px;
+    top: 121px;
+    color: #5c6a79;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: capitalize;
+    width: 170px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.main-books-price {
+    position: relative;
+    margin-top: -10px;
+    height: 12px;
+    left: 248px;
+    top: 175px;
+    color: #1c2a39;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-books-buy {
+    position: relative;
+    margin-top: -10px;
+    width: 176px;
+    height: 45px;
+    left: 248px;
+    top: 207px;
+    box-sizing: border-box;
+    border: 1px solid #4c3db2;
+    color: #4c3db2;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-icons-circle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+}
+.main-image .image-active{
+  opacity:1;
+}
+.main-image-image0, .main-image-image1, .main-image-image2{
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+.main-circles .circle-active, .main-circles-circle1:hover, .main-circles-circle0:hover, .main-circles-circle2:hover{
+  background: #9E98DC;
+
+
+}
+
+.main-circles-circle1, .main-circles-circle0, .main-circles-circle2{
+  width: 12px;
+  height: 12px;
+
+  background: #ccc;
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+.header{
+  position: fixed;
+  z-index: 999;
+  background: white;
+}
+.main{
+  position: relative;
+  top:119px;
+}
+.header-icons-circle{
+  position: absolute;
+
+  width:13px;
+  height:13px;
+
+  left:111px;
+  background: red;
+  text-color:white;
+
+  border: 0px;
+
+  color: white;
+  margin:auto;
+  top:8px;
+}
+.header-icons-circle-number{
+  position: relative;
+  left:4px;
+  margin-top: 0px;
+  top:1px;
+
+  margin-bottom: 0px;
+
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.19px;
+  text-align: left;
+}
+.none{
+  display: none;
+}
